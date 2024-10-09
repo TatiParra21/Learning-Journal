@@ -1,0 +1,166 @@
+html, body{
+    min-height: 100%;
+    width: 100%;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+/* display flex */
+body,
+.flex-group{
+    display:flex;
+}
+/* directio: row */
+header,
+#title-part,
+nav{
+    flex-direction: row;  
+}
+/* flex-direction:column */
+body,
+.blog-post,
+#bottom-sec,
+footer,
+.post-info,
+#home-part,
+#top-sec,
+#about-top-part,
+#about-part{
+    flex-direction: column;
+}
+/* align items: center */
+header,
+#title-part,
+.blog-post,
+#bottom-sec,
+body{
+    align-items:center;
+}
+button{
+    font-weight: bold;
+    border:none;
+    background: none;
+}
+header{
+    min-height: 10vh;
+    width:100vw;
+    padding: 0.5em 1em;
+}
+footer{
+    text-align: center;
+    background: black;
+    color: white;
+    width:100%;
+    padding: 1em;
+}
+#title-part{
+    font-size:0.5rem;
+    padding: 1em;
+    gap: 0.5em;
+    width:60%;
+}
+nav{
+    width:40%;
+    justify-content: space-around;
+}
+#icon-pic{
+    width:15%;
+}
+#person-pic{
+    width:50%;
+    align-self: center;
+}
+/* justify content:space between */
+header{
+    justify-content: space-between;
+}
+.blog-post{
+    width:90%;
+    margin-bottom:2em;
+}
+.post-info{
+    padding-top: 1em;
+    gap:0.5em;
+}
+footer{
+     padding-bottom: 1em;
+}
+#view-more-btn{
+    margin-bottom: 3em;
+}
+#home-part{
+    background-image: url("./imgs/article-image-hero.png");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    min-height:30vh;
+    aspect-ratio: 1.5/1;
+    width:100vw;
+    color: white;
+}
+#home-part div{
+    margin-top: auto;
+    padding:1em;
+}
+#bottom-sec{
+    margin-top:1em;
+}
+.about-container{
+    padding:0.7em;
+}
+p{
+    font-size: 1.3em;
+    margin-bottom:0.5em;
+}
+h2{
+    margin-bottom:0.3em;
+}
+
+@media(min-width:560px){
+#home-part{
+    max-width:60vw;
+    width: auto;
+    font-size:clamp(1rem,1.8vw,2rem);
+}
+#top-sec{
+    align-items: center;
+}
+#home-part div{
+    margin: 0 auto auto auto;
+    text-align: center;
+    padding:1em;
+}
+#bottom-sec{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    margin:2em;
+}
+.blog-post img{
+    aspect-ratio: 1.5/1;
+    width:100%;
+}
+#about-top-part{
+    flex-direction: row;
+    max-height: 30vh;
+   align-items: center;
+}
+#person-pic{
+    max-height:100%;
+    width:auto;
+}
+#icon-pic{
+    width:5%;
+    height:auto;
+}
+header{
+    justify-content: space-between;
+}
+#title-part, nav{
+    width:25%;
+}
+nav{
+    justify-content:space-evenly;
+}
+}
+
