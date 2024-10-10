@@ -20,14 +20,7 @@ nav{
 }
 /* flex-direction:column */
 body,
-.blog-post,
-#bottom-sec,
-footer,
-.post-info,
-#home-part,
-#top-sec,
-#about-top-part,
-#about-part{
+.flex-colum{
     flex-direction: column;
 }
 /* align items: center */
@@ -116,7 +109,6 @@ p{
 h2{
     margin-bottom:0.3em;
 }
-
 @media(min-width:560px){
 #home-part{
     max-width:60vw;

@@ -13,9 +13,9 @@ const fillBottom =(amount)=>{
     let html =""
     for(let i =0;i <amount;i++){
         html +=`
-        <div class="blog-post flex-group">
+        <div class="blog-post flex-colum flex-group">
           <img src="imgs/blog-image-0${i+1}.png">
-          <div class="post-info flex-group">
+          <div class="post-info flex-colum flex-group">
             <p class="post-date">JULY 23,2022</p>
             <h2> Blog ${i+1}</h2>
             <p class="blog-desc">I'm excited to start a new learning journey as a 
@@ -45,7 +45,7 @@ const showPosts =() =>{
 
 const showHomePage =()=>{
   topSec.innerHTML =`
-          <div id="home-part" class="flex-group">
+          <div id="home-part" class="flex-group flex-colum">
             <div>
             <p class="post-date">JULY 23,2022</p>
             <h2> My new journey as a bootcamp student.</h2>
@@ -58,8 +58,8 @@ const showHomePage =()=>{
 }
 const showAboutPage =()=>{
   topSec.innerHTML =`
-  <div id="about-part" class="flex-group">
-    <div id="about-top-part" class="flex-group">
+  <div id="about-part" class="flex-group flex-colum">
+    <div id="about-top-part" class="flex-group flex-colum">
       <img id="person-pic"src="imgs/image 18.png"/>
       <div class="about-container">
         <h2>Hi there! My name is Roku 
